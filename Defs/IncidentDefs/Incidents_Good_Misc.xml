@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<IncidentDefs>
+
+  <IncidentDef>
+    <defName>GreatMigration</defName>
+    <workerClass>GreatMigration.IncidentWorker_GreatMigration</workerClass>
+    <chance>1.0</chance>
+    <minRefireDays>60</minRefireDays>
+  </IncidentDef> 
+
+</IncidentDefs>
