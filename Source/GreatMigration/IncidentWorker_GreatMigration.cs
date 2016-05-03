@@ -6,14 +6,11 @@ using Verse;
 using Verse.AI;
 using RimWorld;
 using UnityEngine;
-using RimWorld.SquadAI;
 
 namespace GreatMigration
 {
     class IncidentWorker_GreatMigration : IncidentWorker
     {
-        private Job job1 = new Job();
-        private Job job2 = new Job();
         public override bool TryExecute(IncidentParms parms)
         {
             IntVec3 intVec;
@@ -21,53 +18,32 @@ namespace GreatMigration
             {
                 return false;
             }
-            if (SpawnRandomMigrationAt(intVec))
-            {
-                Find.LetterStack.ReceiveLetter("Migration", "A group of animals is migrating through your region.", LetterType.Good, intVec, null);
-                return true;
-            }
-            return false;           
-        }
-
-        public bool checkDistance(IntVec3 cell1, IntVec3 cell2)
-        {
-            return (cell1 - cell2).ToVector3().magnitude > 50;
-        }
-
-        public bool SpawnRandomMigrationAt(IntVec3 loc)
-        {
             PawnKindDef pawnKindDef = (
                 from a in Find.Map.Biome.AllWildAnimals
                 where GenTemperature.SeasonAcceptableFor(a.race)
                 select a).RandomElement();
-            if (pawnKindDef == null)
+            float points = IncidentMakerUtility.DefaultParmsNow(Find.Storyteller.def, IncidentCategory.ThreatBig).points;
+            int num = Rand.RangeInclusive(12, 24);
+            int num2 = Rand.RangeInclusive(90000, 150000);
+            IntVec3 invalid = IntVec3.Invalid;
+            if (!RCellFinder.TryFindRandomCellOutsideColonyNearTheCenterOfTheMap(intVec, 10f, out invalid))
             {
-                Log.Error("No spawnable animals right now.");
-                return false;
+                invalid = IntVec3.Invalid;
             }
-            int randomInRange = Rand.RangeInclusive(12, 24);
-            IntVec3 enterCell = loc;
-            IntVec3 exitCell = CellFinder.RandomEdgeCell();
-            if (checkDistance(enterCell, exitCell))
+            Pawn pawn = null;
+            for (int i = 0; i < num; i++)
             {
-                for (int i = 0; i < randomInRange; i++)
+                IntVec3 loc = CellFinder.RandomClosewalkCellNear(intVec, 10);
+                pawn = PawnGenerator.GeneratePawn(pawnKindDef, null);
+                GenSpawn.Spawn(pawn, loc, Rot4.Random);
+                pawn.mindState.exitMapAfterTick = Find.TickManager.TicksGame + num2;
+                if (invalid.IsValid)
                 {
-                    Pawn newThing = PawnGenerator.GeneratePawn(pawnKindDef, null, false, 0);
-                    IntVec3 groupCell = CellFinder.RandomClosewalkCellNear(enterCell, 10);
-                    GenSpawn.Spawn(newThing, groupCell);
-                    job1 = new Job(JobDefOf.Goto, exitCell)
-                    {
-                        exitMapOnArrival = true
-                    };
-                    newThing.jobs.StartJob(job1, JobCondition.None, null, false, true);
-                    newThing.mindState.exitMapAfterTick = Find.TickManager.TicksGame + Rand.Range(10000, 12000);
+                    pawn.mindState.forcedGotoPosition = CellFinder.RandomClosewalkCellNear(invalid, 10);
                 }
-                return true;
             }
-            else
-            {
-                return false;
-            }
+            Find.LetterStack.ReceiveLetter("Migration", "A group of animals is migrating through your region.", LetterType.Good, intVec, null);
+            return true;
         }
     }
 }

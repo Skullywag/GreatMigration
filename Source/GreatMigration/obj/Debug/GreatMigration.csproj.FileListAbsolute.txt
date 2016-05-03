@@ -18,3 +18,23 @@ C:\Users\mjsku_000\Desktop\RimWorldAlpha12Win\RimWorld906Win\Mods\GreatMigration
 C:\Users\mjsku_000\Desktop\RimWorldAlpha12Win\RimWorld906Win\Mods\GreatMigration\Source\GreatMigration\obj\Debug\GreatMigration.csprojResolveAssemblyReference.cache
 C:\Users\mjsku_000\Desktop\RimWorldAlpha12Win\RimWorld906Win\Mods\GreatMigration\Source\GreatMigration\obj\Debug\GreatMigration.dll
 C:\Users\mjsku_000\Desktop\RimWorldAlpha12Win\RimWorld906Win\Mods\GreatMigration\Source\GreatMigration\obj\Debug\GreatMigration.pdb
+C:\Users\mjsku\Desktop\New folder\RimWorldAlpha12dWin\RimWorld914Win\Mods\GreatMigration\Source\GreatMigration\bin\Debug\GreatMigration.dll
+C:\Users\mjsku\Desktop\New folder\RimWorldAlpha12dWin\RimWorld914Win\Mods\GreatMigration\Source\GreatMigration\bin\Debug\GreatMigration.pdb
+C:\Users\mjsku\Desktop\New folder\RimWorldAlpha12dWin\RimWorld914Win\Mods\GreatMigration\Source\GreatMigration\obj\Debug\GreatMigration.csprojResolveAssemblyReference.cache
+C:\Users\mjsku\Desktop\New folder\RimWorldAlpha12dWin\RimWorld914Win\Mods\GreatMigration\Source\GreatMigration\obj\Debug\GreatMigration.dll
+C:\Users\mjsku\Desktop\New folder\RimWorldAlpha12dWin\RimWorld914Win\Mods\GreatMigration\Source\GreatMigration\obj\Debug\GreatMigration.pdb
+C:\Users\mjsku\Desktop\RimWorld1117WinDev\Mods\GreatMigration\Source\GreatMigration\bin\Debug\GreatMigration.dll
+C:\Users\mjsku\Desktop\RimWorld1117WinDev\Mods\GreatMigration\Source\GreatMigration\bin\Debug\GreatMigration.pdb
+C:\Users\mjsku\Desktop\RimWorld1117WinDev\Mods\GreatMigration\Source\GreatMigration\obj\Debug\GreatMigration.csprojResolveAssemblyReference.cache
+C:\Users\mjsku\Desktop\RimWorld1117WinDev\Mods\GreatMigration\Source\GreatMigration\obj\Debug\GreatMigration.dll
+C:\Users\mjsku\Desktop\RimWorld1117WinDev\Mods\GreatMigration\Source\GreatMigration\obj\Debug\GreatMigration.pdb
+C:\Users\mjsku\Desktop\RimWorld1131WinDev\Mods\GreatMigration\Source\GreatMigration\obj\Debug\GreatMigration.csprojResolveAssemblyReference.cache
+C:\Users\mjsku\Desktop\RimWorld1131WinDev\Mods\GreatMigration\Source\GreatMigration\obj\Debug\GreatMigration.dll
+C:\Users\mjsku\Desktop\RimWorld1131WinDev\Mods\GreatMigration\Source\GreatMigration\obj\Debug\GreatMigration.pdb
+C:\Users\mjsku\Desktop\RimWorld1131WinDev\Mods\GreatMigration\Source\GreatMigration\bin\Debug\GreatMigration.dll
+C:\Users\mjsku\Desktop\RimWorld1131WinDev\Mods\GreatMigration\Source\GreatMigration\bin\Debug\GreatMigration.pdb
+C:\Users\mjsku\Desktop\RimWorldAlpha13Win\RimWorld1135Win\Mods\GreatMigration\Source\GreatMigration\bin\Debug\GreatMigration.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha13Win\RimWorld1135Win\Mods\GreatMigration\Source\GreatMigration\bin\Debug\GreatMigration.pdb
+C:\Users\mjsku\Desktop\RimWorldAlpha13Win\RimWorld1135Win\Mods\GreatMigration\Source\GreatMigration\obj\Debug\GreatMigration.csprojResolveAssemblyReference.cache
+C:\Users\mjsku\Desktop\RimWorldAlpha13Win\RimWorld1135Win\Mods\GreatMigration\Source\GreatMigration\obj\Debug\GreatMigration.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha13Win\RimWorld1135Win\Mods\GreatMigration\Source\GreatMigration\obj\Debug\GreatMigration.pdb
